@@ -9,7 +9,7 @@ const schema = require ('./schema')
 const connect = require ('./database');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-require('dotenv').config()
+require('dotenv').config({path:'variables.env'})
 
 var app = express();
 connect();
